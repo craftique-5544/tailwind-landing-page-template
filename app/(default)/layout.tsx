@@ -1,17 +1,16 @@
-import './../css/style.css'
+import Header from '@/components/ui/header'
 
-export default function RootLayout({
+export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="font-inter antialiased bg-white text-gray-900 tracking-tight">
-        <div className="flex flex-col min-h-screen overflow-hidden">
-          {children}
-        </div>
-      </body>
-    </html>
+    <>
+      <Header />
+      <main className="grow pt-16">
+        {children}
+      </main>
+    </>
   )
 }
