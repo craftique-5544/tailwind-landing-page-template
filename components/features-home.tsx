@@ -1,6 +1,6 @@
 export default function FeaturesHome() {
   return (
-    <section className="relative">
+    <section className="relative bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           
@@ -12,15 +12,15 @@ export default function FeaturesHome() {
 
           {/* Items */}
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
               <h4 className="text-xl font-bold mb-2">Verified Profiles</h4>
               <p className="text-gray-600">Every member is verified to ensure a safe and genuine experience.</p>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
               <h4 className="text-xl font-bold mb-2">Interest Matching</h4>
               <p className="text-gray-600">Find people who share your hobbies, from gaming to coffee chats.</p>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center">
               <h4 className="text-xl font-bold mb-2">Safe & Private</h4>
               <p className="text-gray-600">Your privacy is our priority. Control who can connect with you.</p>
             </div>
