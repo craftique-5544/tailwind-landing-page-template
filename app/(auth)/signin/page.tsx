@@ -1,68 +1,28 @@
-export const metadata = {
-  title: "Sign In - Simple",
-  description: "Page description",
-};
-
-import Link from "next/link";
-
 export default function SignIn() {
   return (
-    <>
-      <>
-        <div className="mb-10">
-          <h1 className="text-4xl font-bold">Sign in to your account</h1>
-        </div>
-        {/* Form */}
-        <form>
-          <div className="space-y-4">
-            <div>
-              <label
-                className="mb-1 block text-sm font-medium text-gray-700"
-                htmlFor="email"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                className="form-input w-full py-2"
-                type="email"
-                placeholder="corybarker@email.com"
-                required
-              />
-            </div>
-            <div>
-              <label
-                className="mb-1 block text-sm font-medium text-gray-700"
-                htmlFor="password"
-              >
-                Password
-              </label>
-              <input
-                id="password"
-                className="form-input w-full py-2"
-                type="password"
-                autoComplete="on"
-                placeholder="••••••••"
-                required
-              />
-            </div>
+    <div className="flex flex-col items-center justify-center min-h-screen py-12 bg-gray-50">
+      <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-sm border border-gray-100">
+        <h1 className="text-3xl font-bold text-center mb-8">Welcome Back</h1>
+        
+        <form className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" className="w-full mt-1 p-3 border border-gray-300 rounded-lg" placeholder="you@example.com" />
           </div>
-          <div className="mt-6">
-            <button className="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-              Sign In
-            </button>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" className="w-full mt-1 p-3 border border-gray-300 rounded-lg" placeholder="••••••••" />
           </div>
+          
+          <button className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+            Sign In
+          </button>
         </form>
-        {/* Bottom link */}
-        <div className="mt-6 text-center">
-          <Link
-            className="text-sm text-gray-700 underline hover:no-underline"
-            href="/reset-password"
-          >
-            Forgot password
-          </Link>
-        </div>
-      </>
-    </>
-  );
+
+        <p className="mt-6 text-center text-sm text-gray-600">
+          Don't have an account? <a href="/signup" className="text-blue-600 font-medium">Sign up</a>
+        </p>
+      </div>
+    </div>
+  )
 }
