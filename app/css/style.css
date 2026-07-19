@@ -6,4 +6,15 @@
   body {
     @apply font-sans antialiased text-gray-900 bg-white;
   }
+  
+  /* Apply your primary brand color to headings */
+  h1, h2, h3 {
+    @apply text-gray-900;
+  }
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 transition;
+  }
 }
